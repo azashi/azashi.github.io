@@ -1,3 +1,3 @@
 # Portfolio Website.
 
-Landing page to my various profiles available.
+Landing page of my portfolio website.
