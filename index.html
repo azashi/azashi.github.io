@@ -1,62 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfolio website of Abhishek Joshi." />
-    <script
-      src="https://kit.fontawesome.com/bc3a23fdf9.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
-    />
-    <link rel="stylesheet" href="./css/style.min.css" />
-    <link
-      rel="shortcut icon"
-      href="./favicon/favicon.ico"
-      type="image/x-icon"
-    />
-    <title>Abhishek Joshi</title>
-  </head>
-  <body>
-    <div class="showcase">
-      <div class="wrapper">
-        <main class="title">
-          <section class="box1">
-            <h1 class="animated fadeIn">Abhishek Joshi</h1>
-            <h3 class="animated fadeInUp delay-1s">Front-End Web Developer</h3>
-            <hr />
-            <div class="social animated fadeInDown delay-2s">
-              <ul>
-                <li>
-                  <a href="https://github.com/azashi" target="_blank"
-                    ><i class="fab fa-github-square fa-2x"></i
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/abhishek95joshi/"
-                    target="_blank"
-                    ><i class="fab fa-linkedin fa-2x"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/azashi9/" target="_blank"
-                    ><i class="fab fa-instagram-square fa-2x"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="mailto:azashi95@gmail.com"
-                    ><i class="fas fa-at fa-2x"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </section>
-        </main>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio website of Abhishek Joshi." />
+  <script src="https://kit.fontawesome.com/bc3a23fdf9.js" crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" /> -->
+  <link rel="stylesheet" href="./css/style.min.css" />
+  <link rel="shortcut icon" href="./favicon/favicon.ico" type="image/x-icon" />
+  <title>Abhishek Joshi | azashi</title>
+</head>
+
+<body>
+  <header>
+    <!-- Navbar -->
+    <nav id="nav">
+      <div class="container navbar">
+        <div class="logo-container">
+          <a href="#"><img src="./img/logo.png"></a>
+        </div>
+
+        <ul class="navlist">
+          <li>
+            <a href="https://github.com/azashi" target="_blank" class="navlink"><i
+                class="fab fa-github-square fa-2x"></i></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/abhishek95joshi/" target="_blank" class="navlink"><i
+                class="fab fa-linkedin fa-2x"></i></a>
+          </li>
+          <li>
+            <a href="mailto:azashi95@gmail.com" class="navlink"><i class="fas fa-at fa-2x"></i></a>
+          </li>
+        </ul>
+
       </div>
-    </div>
-  </body>
+      </div>
+    </nav>
+  </header>
+  <!-- Content -->
+  <main class="main">
+    <section class="hero container">
+      <h1 class="h-1">Abhishek Joshi</h1>
+      <h4 class="h-4 mt">Web Devloper</h4>
+    </section>
+    <section class="content">
+      <div class="skills rounded">
+        <p><span class="ug">Skills</span> : JavaScript (ES6), React, Redux</p>
+      </div>
+      <div class="projects rounded">
+        <h5 class="h-4">Projects :</h5>
+
+        <div class="project">
+          <div class="project-head">
+            <h6 class="h-5 project-title">Pizza Front-End App</h6>
+          </div>
+          <div class="project-body">
+            <div class="project-img">
+              <img src="./img/pizza-front.png" alt="Pizza App front end image">
+            </div>
+            <div class="project-info">
+              <p>Front end app for ordering delicious pizzas!</p>
+              <ul>
+                <li>User can login with 9 digit number.</li>
+                <li>Number is validated and checked if user is present.</li>
+                <li>If no number is in database (new user) then they are shown create user screen.</li>
+                <li>After creating user, they are able to login and order pizza from menu.</li>
+                <li>Past orders and pizza quantity can be checked after login.</li>
+              </ul>
+              <p>Note: Deployed on free heroku dyno, hence takes time for initial load.</p>
+              <a href="https://pizza-front-end.herokuapp.com/" target="_blank" class="btn">View Demo <i
+                  class="fas fa-chevron-circle-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-head">
+            <h6 class="h-5 project-title">Pizza Back-End App</h6>
+          </div>
+          <div class="project-body">
+            <div class="project-img">
+              <img src="./img/pizza-back.png" alt="Pizza App back end image">
+            </div>
+            <div class="project-info">
+              <p>Back end API that can be used for creating pizza ordering app!</p>
+              <ul>
+                <li>5 public APIs available to create pizza ordering service.</li>
+                <li>Can store pizza orders with quantity of each pizza.</li>
+                <li>Uses MYSQL database to store data.</li>
+                <li>Hosted on heroku.</li>
+              </ul>
+              <p>Note: Deployed on free heroku dyno, hence takes time for initial load.</p>
+              <a href="https://github.com/azashi/pizza-backend" target="_blank" class="btn">View Demo <i
+                  class="fas fa-chevron-circle-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>by <strong>azashi</strong></p>
+  </footer>
+</body>
+
 </html>
