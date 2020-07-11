@@ -144,13 +144,23 @@ nav{
             text-decoration: underline;
           }
         }
+
+        .project-video{
+          flex-direction: column;
+          align-items: center;
+          .project-img{
+            width: 90% !important;
+            margin: 5px 0px 20px 0px;
+          }
+        }
+
         .project-body{
           display: flex;
           justify-content: space-between;
           .project-img{
             width: 300px;
             border-radius: 10px;
-            img{
+            img,video{
               width: 100%;
               height: auto;
               border-radius: 10px;
@@ -162,6 +172,7 @@ nav{
                 box-shadow: 2px 4px 4px 3px rgba(50, 50, 50, 1);
               }
             }
+          
           }
           .project-info{
               
@@ -209,6 +220,11 @@ nav{
   }
   .project-info{
     margin-top: 20px;
+  }
+  .project-video{
+    .project-img{
+      margin-bottom: 0px !important;
+    }
   }
 }
 
